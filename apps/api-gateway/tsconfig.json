@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "target": "es2021",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@agriconnect/shared-database": ["../../libs/shared-database/src/index.ts"],
+      "@agriconnect/shared-database/*": ["../../libs/shared-database/src/*"]
+    },
+    "strictPropertyInitialization": false
+  }
+}
